@@ -8,62 +8,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- 수치가 있을 때 우선순위는 Red, 하지만 좋은 예제는 아니다 -->
-    <div class="w-10 h-10 bg-blue-500 bg-red-500"></div>
-    <br />
-    <div class="w-10 h-10 bg-red-500 bg-blue-500"></div>
+    <!-- 
+        https://tailwindcss.com/docs/font-family
+            font-sans
+            font-serif
+            font-mono
+    -->
 
-    <div class="w-10 h-10 bg-blue-400 bg-red-500"></div>
-    <br />
-    <div class="w-10 h-10 bg-red-500 bg-blue-400"></div>
-
-    <div class="grid grid-cols-10 gap-2">
-      <div class="bg-sky-50 aspect-square"></div>
-      <div class="bg-sky-100 aspect-square"></div>
-      <div class="bg-sky-200 aspect-square"></div>
-      <div class="bg-sky-300 aspect-square"></div>
-      <div class="bg-sky-400 aspect-square"></div>
-      <div class="bg-sky-500 aspect-square"></div>
-      <div class="bg-sky-600 aspect-square"></div>
-      <div class="bg-sky-700 aspect-square"></div>
-      <div class="bg-sky-800 aspect-square"></div>
-      <div class="bg-sky-900 aspect-square"></div>
-    </div>
-    <div class="grid grid-cols-10 gap-2">
-      <div class="bg-blue-50 aspect-square"></div>
-      <div class="bg-blue-100 aspect-square"></div>
-      <div class="bg-blue-200 aspect-square"></div>
-      <div class="bg-blue-300 aspect-square"></div>
-      <div class="bg-blue-400 aspect-square"></div>
-      <div class="bg-blue-500 aspect-square"></div>
-      <div class="bg-blue-600 aspect-square"></div>
-      <div class="bg-blue-700 aspect-square"></div>
-      <div class="bg-blue-800 aspect-square"></div>
-      <div class="bg-blue-900 aspect-square"></div>
-    </div>
-    <div class="grid grid-cols-10 gap-2">
-      <div class="bg-indigo-50 aspect-square"></div>
-      <div class="bg-indigo-100 aspect-square"></div>
-      <div class="bg-indigo-200 aspect-square"></div>
-      <div class="bg-indigo-300 aspect-square"></div>
-      <div class="bg-indigo-400 aspect-square"></div>
-      <div class="bg-indigo-500 aspect-square"></div>
-      <div class="bg-indigo-600 aspect-square"></div>
-      <div class="bg-indigo-700 aspect-square"></div>
-      <div class="bg-indigo-800 aspect-square"></div>
-      <div class="bg-indigo-900 aspect-square"></div>
-    </div>
-    <div class="grid grid-cols-10 gap-2">
-      <div class="bg-violet-50 aspect-square"></div>
-      <div class="bg-violet-100 aspect-square"></div>
-      <div class="bg-violet-200 aspect-square"></div>
-      <div class="bg-violet-300 aspect-square"></div>
-      <div class="bg-violet-400 aspect-square"></div>
-      <div class="bg-violet-500 aspect-square"></div>
-      <div class="bg-violet-600 aspect-square"></div>
-      <div class="bg-violet-700 aspect-square"></div>
-      <div class="bg-violet-800 aspect-square"></div>
-      <div class="bg-violet-900 aspect-square"></div>
+    <!-- 
+        https://tailwindcss.com/docs/font-size
+        text-xs	    font-size: 0.75rem; /* 12px */
+                    line-height: 1rem; /* 16px */
+        text-sm	    font-size: 0.875rem; /* 14px */
+                    line-height: 1.25rem; /* 20px */
+        text-base   font-size: 1rem; /* 16px */
+                    line-height: 1.5rem; /* 24px */
+        text-lg	    font-size: 1.125rem; /* 18px */
+                    line-height: 1.75rem; /* 28px */
+        text-xl	    font-size: 1.25rem; /* 20px */
+                    line-height: 1.75rem; /* 28px */
+        text-2xl	font-size: 1.5rem; /* 24px */
+                    line-height: 2rem; /* 32px */
+        ...
+    -->
+    <div class="space-y-5">
+      <div class="p-3 bg-white shadow rounded-lg">
+        <h3 class="text-xs border-b">font-sans</h3>
+        <p class="font-sans">The quick brown fox jumps over the lazy dog.</p>
+      </div>
+      <div class="p-3 bg-white shadow rounded-lg">
+        <h3 class="text-xs border-b">font-serif</h3>
+        <p class="font-serif">The quick brown fox jumps over the lazy dog.</p>
+      </div>
+      <div class="p-3 bg-white shadow rounded-lg">
+        <h3 class="text-xs border-b">font-mono</h3>
+        <p class="font-mono">The quick brown fox jumps over the lazy dog.</p>
+      </div>
     </div>
   </body>
 </html>
